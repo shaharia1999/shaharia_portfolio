@@ -46,5 +46,27 @@ $(document).ready(function(){
             }
         }
     })
+    $('#GetFiles').on('click', function () {
+      $.ajax({
+          url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/172905/test.pdf',
+          // url:'https://drive.google.com/file/d/17QFL_MvXSXlhBUVV3wRPULxCUw9D_Ttr/view?usp=sharing',
+          method: 'GET',
+          xhrFields: {
+              responseType: 'blob'
+          },
+          success: function (data) {
+              var a = document.createElement('a');
+              var url = window.URL.createObjectURL(data);
+              a.href = url;
+              a.download = 'Shahria_Resume-Copy.pdf';
+              // a.download = 'myfile.pdf';
+              document.body.append(a);
+              a.click();
+              a.remove();
+              window.URL.revokeObjectURL(url);
+          }
+      });
+  });
+    //over here 
     });
  
