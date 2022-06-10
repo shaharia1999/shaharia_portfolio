@@ -407,6 +407,7 @@ center  h1::after{
                     color: white;
                     font-weight: 700;
                     position: relative;
+                    text-decoration: none;
                  
             }
     #services .container span::before{
@@ -772,6 +773,8 @@ center  h1::after{
          border-radius:30px;
      
      }
+     /* Client */
+ 
   /* contract start  */
   #contract {
       width:100%;
@@ -790,8 +793,32 @@ center  h1::after{
 
 
   } */
+  #project{
+      height:auto;
+      width:100%;
+     
+  }
+  #projec .container{
+       margin: 0 auto;
+  }
+  #project  .row {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   
+      
+  }
+ 
+  #project  .row  img{
+      height: 600px;
+      width: 300px;
+    
+    
+  }
   #contract .container{
       display: flex;
+    
       align-items: center;
       flex-flow:column;
    
@@ -942,5 +969,7 @@ footer center
 {    padding-top: 40px;
     font-size: 1.8rem;
     text-decoration: none;
+    
    
 }
+

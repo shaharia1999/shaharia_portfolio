@@ -48,10 +48,9 @@ $(document).ready(function(){
         }
     })
     $(window).hover(function () {
-        $("center").css('text-decoration','none')
+        // $("center").css("bag", "none")
+        $('.center').css('text-decoretion', 'none');
             
-        }, function () {
-            // out
         }
     );
 

@@ -148,6 +148,23 @@
   </div>
 
 </section>
+<!-- Project -->
+<section id="project">
+  <center class="text-white"><h1>Projects</h1></center>
+  <div class="container">
+    <div class="row">
+         <div><a href="https://cars-parts-11bbb.web.app/?fbclid=IwAR33Cx6dBCo_a9_r4Xx8cLKrZ9ggbx9mAmHIjYEdWVE0kaHsi7wLft0AEb0"><img src="images/12.png"></a></div>
+         <div><a href="https://store-management-dd4c6.web.app/"><img src="images/11.png"></a></div>
+         <div><a href="https://shaharia1999.github.io/exam/"><img src="images/exam.png"></a></div>
+         
+     
+    </div>
+
+  </div>
+      
+</section>
+
+
 <section id="contract">
   <div class="container">
     <center><h1>contract me</h1></center>
@@ -180,26 +197,27 @@
     </div>
        <div class="col-md-6 contract-2" >
          <h1>message:</h1>
-         <form   action="https://formspree.io/f/xrgjdlgg"
+         <form action="https://formspree.io/f/xrgjdlgg"
          method="POST">
+          <!--  -->
              <div class="name-email">
-             <input type="text"placeholder=" name"name="Name" >
-             <input type="email"placeholder="email" name="Email">
+             <input type="text"placeholder=" name"name="Name" class="nam" >
+             <input type="email"placeholder="email" name="Email" class="eml">
              </div>
              <div>
-               <input type="text"placeholder="subject"class="subject"name="Subject" >
+               <input type="text"placeholder="subject"class="sub"name="Subject" class="subject">
              </div>
              <div>
-               <textarea name="message" id="" cols="60" rows="6"placeholder="message :" " ></textarea>
+               <textarea name="message" id="" cols="60" rows="6"placeholder="message :"  class="mess"></textarea>
              </div>
-             <button type="submit" >Tuch me</button>
+             <button type="submit" onclick="from_control()" >Tuch me</button>
          </form>
        </div>
     </div>
   </div>
 </section>
 <footer>
-  <center>@copyright by shaharia 2021</center>
+  <center class="center">@copyright by shaharia 2022</center>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
 <script>
@@ -242,7 +260,21 @@ var typed = new Typed('.autuplay2',{
                       }
 
 </script> -->
-<script src="script.js"></script>
+<script>
+      const name=document.querySelector('.nam')
+      const email=document.querySelector('.eml')
+      const subject=document.querySelector('.sub')
+      const message=document.querySelector('.mess')
+    function from_control(e){
+    
+  
+ 
+    
+  }
+</script>
+<script src="script.js">
+
+</script>
 </body>
 </html></i> 
 
